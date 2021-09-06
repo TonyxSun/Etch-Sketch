@@ -13,6 +13,7 @@ function createGrid(size){
         div.setAttribute('id', `${i}`);
         div.classList.add('grid-item');
         div.addEventListener('mouseenter', changeColor);
+        div.addEventListener('touchstart', changeColor);
         container.appendChild(div);
     } 
 }

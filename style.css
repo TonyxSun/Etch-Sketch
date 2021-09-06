@@ -51,6 +51,11 @@ header{
         "b";
     }
 
+    .container{
+        height: 80vw;
+  width: 80vw;
+    }
+
     .controls{
         margin: auto;
         align-items: flex-start;
