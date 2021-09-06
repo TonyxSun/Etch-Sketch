@@ -77,12 +77,10 @@ header{
   border: solid 1px rgb(126, 126, 126);
 }
 
-.hovered {
-  background-color: red;
-}
 
 button{
     width: 80%;
+    height: 3rem;
     margin: 1rem;
     font-family: 'Kaisei HarunoUmi', serif;
     
@@ -90,9 +88,10 @@ button{
 
 #colorPicker {
     -webkit-appearance: none;
-    width: 6rem;
+    width: 7.8rem;
     height: 3rem;
-    border: none;
+    border: none; 
     padding: 0;
+    margin-bottom: 1rem;
     /* border-radius: 50px; */
 }

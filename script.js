@@ -3,17 +3,15 @@ let MODE = "default";
 const container = document.querySelector('.container');
 
 function createGrid(size){
-    container.setAttribute('style', `grid: repeat(${size}, 1fr) / repeat(${size}, 1fr);`);
     if (MODE === "default"){
-        container.setAttribute('style', `box-shadow: 0 0 10px ${COLOR};`);
+        container.setAttribute('style', `grid: repeat(${size}, 1fr) / repeat(${size}, 1fr);box-shadow: 0 0 10px ${COLOR};`);
     } else {
-        container.setAttribute('style', `box-shadow: 0 0 10px #FFFFFF;`);
+        container.setAttribute('style', `grid: repeat(${size}, 1fr) / repeat(${size}, 1fr);box-shadow: 0 0 10px #FFFFFF;`);
     }
     for (let i = 0; i < size**2; i++) {
         let div = document.createElement('div');
         div.setAttribute('id', `${i}`);
         div.classList.add('grid-item');
-        // console.log(COLOR);
         div.addEventListener('mouseenter', changeColor);
         container.appendChild(div);
     } 
@@ -26,7 +24,6 @@ function changeColor(e){
         e.target.style[`background-color`] = tempColor;
         return;
     } 
-    // console.log(e);
     e.target.style[`background-color`] = COLOR;
 }
 
