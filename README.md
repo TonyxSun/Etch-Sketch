@@ -1,6 +1,5 @@
 # Etch-Sketch
-![Website](https://img.shields.io/website?label=demo&up_message=online&url=https%3A%2F%2Ftonyxsun.github.io%2FEtch-Sketch%2F)
-
+[![Netlify Status](https://api.netlify.com/api/v1/badges/50af0273-1b27-41fa-9406-14855cb55a64/deploy-status)](https://app.netlify.com/sites/etchnsketch/deploys)
 
 Etch a sketch on the canvas! Created with front-end languages. 
 
